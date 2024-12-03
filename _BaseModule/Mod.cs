@@ -10,7 +10,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 
-namespace _BaseModule
+namespace K45WE_GasStationPylonPrices
 {
     public class Mod : IMod
     {
@@ -51,7 +51,7 @@ namespace _BaseModule
             }
 
             var layoutsDirectory = Path.Combine(modDir, "layouts");
-            WETemplatesManagementBridge.RegisterCustomTemplates(typeof(Mod).Assembly, layoutsDirectory);
+            log.Info($"RegisterCustomTemplates = {WETemplatesManagementBridge.RegisterCustomTemplates(typeof(Mod).Assembly, layoutsDirectory)}");
             WETemplatesManagementBridge.RegisterLoadableTemplatesFolder(typeof(Mod).Assembly, layoutsDirectory);
 
 
