@@ -1,5 +1,5 @@
 <Publish>
-  <ModId Value="" />
+  <ModId Value="95765" />
   <DisplayName Value="Gas Station Pylon Prices [WE Module]" />
   <ShortDescription Value="Adds the prices of the 3 first products sold at vanilla gas stations." />
   <LongDescription># Gas station pylon prices
@@ -11,10 +11,10 @@ All price totems from vanilla game gas stations have layouts in this pack. The f
 Tip: you can select the formatting locale for the numbers in the  Write Everywhere tab at game Options menu.</LongDescription>
   <Thumbnail Value="Properties/Thumbnail.png" />
   <ForumLink Value="https://forum.paradoxplaza.com/forum/threads/write-everywhere-cities-skylines-2-version.1711901/" />
-  <ModVersion Value="1.0.0.0" />
+  <ModVersion Value="1.0.0.1" />
   <GameVersion Value="1.*" />
-  <ChangeLog>#  v1.0.0r0
-Initial version</ChangeLog>
+  <ChangeLog>#  v1.0.0r1
+Now loads on main menu by default</ChangeLog>
   <Tag Value="Code Mod" />
   <Screenshot Value="Screenshots\000.jpg" />
   <Screenshot Value="Screenshots\001.jpg" />

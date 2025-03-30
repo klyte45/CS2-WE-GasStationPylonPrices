@@ -24,15 +24,14 @@ namespace K45WE_GasStationPylonPrices
             if (GameManager.instance.modManager.TryGetExecutableAsset(this, out var asset))
                 log.Info($"Current mod asset at {asset.path}");
 
-            GameManager.instance.onGameLoadingComplete += DoWhenLoaded;
+            GameManager.instance.RegisterUpdater(DoWhenLoaded);
         }
 
-        private void DoWhenLoaded(Colossal.Serialization.Entities.Purpose purpose, GameMode mode)
+        private void DoWhenLoaded()
         {
             log.Info($"Loading patches");
             DoPatches();
             RegisterModFiles();
-            GameManager.instance.onGameLoadingComplete -= DoWhenLoaded;
         }
 
         private void RegisterModFiles()
