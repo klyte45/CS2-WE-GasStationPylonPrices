@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text.RegularExpressions;
 
 namespace K45WE_GasStationPylonPrices
 {
@@ -67,6 +68,7 @@ namespace K45WE_GasStationPylonPrices
                     (typeof(WEFontManagementBridge), "FontManagementBridge"),
                     (typeof(WEImageManagementBridge), "ImageManagementBridge"),
                     (typeof(WETemplatesManagementBridge), "TemplatesManagementBridge"),
+                    (typeof(WENumberFormattingFn), "WENumberFormattingFn"),
                 })
                 {
                     var targetType = exportedTypes.First(x => x.Name == sourceClassName);

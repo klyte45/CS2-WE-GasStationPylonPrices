@@ -97,7 +97,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Resources\atlases\" />
+    <Folder Include="Resources\atlases\productsIcons\" />
     <Folder Include="Resources\fonts\" />
   </ItemGroup>
   
