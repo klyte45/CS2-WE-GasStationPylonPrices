@@ -9,6 +9,7 @@ namespace K45WE_GasStationPylonPrices
     public static class FnLibrary
     {
         private readonly static EntityManager em = World.DefaultGameObjectInjectionWorld.EntityManager;
+
         public static DynamicBuffer<TradeCost> GetSellingProducts(Entity src)
             => em.TryGetBuffer(src, true, out DynamicBuffer<Renter> renters)
             && renters.Length > 0
@@ -16,10 +17,6 @@ namespace K45WE_GasStationPylonPrices
                 ? trades
                 : default;
 
-        public static string ToFormattedPrice(float price)
-        {
-            if (price <= 0) return "-,---";
-            return WENumberFormattingFn.To4DigitsValue(price);
-        }       
+        public static string ToFormattedPrice(float price) => price <= 0 ? "-----" : WENumberFormattingFn.To4DigitsValue(price);
     }
 }
